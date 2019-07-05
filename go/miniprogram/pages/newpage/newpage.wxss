@@ -1,0 +1,20 @@
+/* miniprogram/pages/newpage/newpage.wxss */
+@import "../index/index.wxss";
+
+.imageaa{
+  mode: aspectFill;
+  width: 100%;
+}
+
+.post {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    float: right;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;  
+    border: 0 solid #ffffff;
+    box-shadow: 4px 1px 1px #cccccc;
+}

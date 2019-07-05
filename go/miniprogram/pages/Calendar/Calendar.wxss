@@ -1,0 +1,120 @@
+/**index.wxss**/
+.t_red{
+  color: rgba(255, 0, 0, 0.575);
+}
+.t_blue{
+  color: rgb(65, 206, 225);
+}
+.calendar{
+
+  margin: 0 1vw;
+}
+.time{
+  padding: 16rpx 20rpx;
+  background-color: rgb(179, 245, 225);
+  display: flex;
+}
+.time view{
+  flex: 1;
+  font-size: 30rpx;
+
+}
+.time view text{
+  font-size: 38rpx;
+}
+.weekName{
+   background-color: gainsboro;
+  width: 100%;
+  display: flex;
+  padding: 16rpx 0;
+}
+.weekName view{
+  flex: 1;
+  text-align: center;
+}
+.sunday,.saturday{
+  color: rgba(255, 0, 0, 0.575);
+}
+.week{
+  width: 100%;
+}
+.week view{
+  width: 14.2%;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: inline-block;
+  margin: 20rpx 0;
+  text-align: center;
+}
+.week view text{
+  width: 100%;
+  height: 100%;
+
+  display: inline-block;
+}
+.calendarSign{
+  margin: 20rpx;
+}
+
+
+.ssss{
+  color:rgb(255, 255, 255);
+  background-color:rgba(255, 0, 157, 0.301);
+}
+
+.ssssa{
+  background-color:rgba(255, 0, 157, 0.082);
+}
+
+.post {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    float: right;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;  
+    border: 0 solid #ffffff;
+    box-shadow: 4px 1px 1px #cccccc;
+}
+
+.post1 {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    float: right;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 20px;
+    right: 70px;  
+    border: 0 solid #ffffff;
+    box-shadow: 4px 1px 1px #cccccc;
+}
+
+.red-packet{
+  width: 25px;
+  height: 25px;
+  transition-property:transform,top;
+  transform-origin:50% 50% 0;
+  -webkit-transition-property:transform,top;
+  -webkit-transform-origin:50% 50% 0;
+}
+
+
+.aon{
+position: absolute;
+white-space:nowrap;/* 防止向下换行*/
+animation-timing-function: linear;
+animation-fill-mode: none;
+}
+.doommview{
+  height: 80%;
+  width: 100%;
+  position: absolute;
+}
+
+@keyframes first{
+  from{left: 100%; }
+  to{left: -100%;}
+}

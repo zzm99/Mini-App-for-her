@@ -1,0 +1,134 @@
+/**index.wxss**/
+
+.selection{
+  border-bottom: 10rpx solid #ddd;
+}
+
+
+
+/* 天气  */
+.container{
+  color: #59518d;
+  font-size: 35rpx;
+  position: relative;
+  width: 100%;
+  height: 170rpx;
+  text-align: center;
+}
+
+.container text{
+  display: block;
+  margin: 2%;
+}
+
+
+.avatar{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50rpx;
+  right:50rpx;
+}
+
+
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+} 
+
+.content-item{
+  height: 200rpx;
+  width: 45%;
+  margin: 1%;
+  position: relative;
+}
+
+.content-item-text{
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  font-size: 10px;
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.5),rgba(0,0,0,0));
+  height: 125rpx;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+
+.header{
+  border-left-width: 4rpx;
+  border-left-style: solid;
+  border-left-color: limegreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.list-item-text-title{
+  font-size: 35rpx;
+  font-weight:400;
+}
+ 
+.list-item-text-content{
+  font-size: 30rpx;
+  color: #999;
+  margin-top: 20rpx;
+}
+
+.list-item{
+  height: 770rpx;
+  width: 100%
+}
+
+
+.list-item-images{
+  height: 500rpx;
+  width: 100%;
+  position: relative;
+}
+
+
+.list-item-images-img{
+  height: 100%;
+  width: 100%
+}
+
+.list-item-text{
+  height: 100rpx;
+  width: 96%;
+  margin-top: 20rpx;
+  padding-left: 2%;
+  padding-right:2%;
+}
+
+
+.post {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    float: right;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;  
+    border: 0 solid #ffffff;
+    box-shadow: 4px 1px 1px #cccccc;
+} 
+
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 10rpx;
+}

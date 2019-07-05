@@ -1,0 +1,64 @@
+
+<!--index.wxml-->
+
+<view class="doommview">
+    <block wx:for="{{doommData}}" wx:key="id">
+        <text wx:if="{{item.display}}" class="aon" style="animation: first {{item.time}}s linear forwards;top:{{item.top}}%;color:{{item.color}};">
+            {{item.text}}
+        </text>
+    </block>
+</view>
+
+
+<view wx:for="{{packetList}}" wx:for-index="index" wx:for-item="items">
+  <image class="red-packet" src="{{items.src}}" style="position:fixed;top:{{items.top}}px;left:{{items.left}}px;-webkit-transition:{{items.speed}}ms linear 0ms;transition:{{items.speed}}ms linear 0ms">
+  </image>
+</view>
+
+
+<view class="calendar">
+  <view class="time">
+    <view>
+      <text class="t_blue">{{year}}</text>年
+      <text class="t_blue">{{month}}</text>月🌙
+    </view>
+    <view style="text-align: right; font-family: 'iconfont';">
+      本月已签到
+      <text class="t_red">{{calendarSignDay}}</text>天💪
+    </view>
+  </view>
+  <view class="weekName">
+    <view class="sunday">Sun</view>
+    <view class="monday">Mon</view>
+    <view class="tuesday">Tue</view>
+    <view class="wednesday">Wed</view>
+    <view class="thursday">Thu</view>
+    <view class="friday">Fri</view>
+    <view class="saturday">Sat</view>
+  </view>
+  <view class="week">
+
+    <!--填补空格-->
+    <view wx:for="{{nbsp}}">\n</view>
+
+    <!--开心循环日期-->
+    <view wx:for="{{date-1}}" style="color:gainsboro;">
+      <text wx:if="{{item+1==calendarSignData[item+1]}}" style="color:red;font-size:22rpx;">已签到</text>
+      <text wx:else="">{{item+1}}</text>
+    </view>
+    <view style="border-bottom: 1px solid blue; padding-bottom:8rpx;">
+      <text wx:if="{{date==calendarSignData[date]}}" style="font-size:25rpx; background-color: ghostwhite">✌</text>
+      <text wx:else="" style="color:blue;">{{date}}</text>
+    </view>
+    <view wx:for="{{monthDaySize-date}}">{{item+date+1}}</view>
+  </view>
+  <view class="calendarSign" wx:if="{{openid === 'oajps5d60kx1sH5pnZljwhNmv3Hs' || openid === 'oajps5ZfPpBvsNHbQLuX9cyQ_a6M'}}">
+    <button wx:if="{{date!=calendarSignData[date]}}" class='ssss' bindtap="calendarSign">签到</button>
+    <button wx:else="" class="ssssa">今日已签到</button>
+  </view>
+</view>
+ 
+<image  src="{{mmurl}}" class="post" bindtap='drawImage' ></image>
+<image  src="{{mmurl1}}" class="post1" bindtap='bindbt' ></image>
+
+<!--|| openid === 'oajps5ZfPpBvsNHbQLuX9cyQ_a6M' -->

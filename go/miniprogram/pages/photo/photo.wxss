@@ -1,0 +1,157 @@
+/* miniprogram/pages/photo/photo.wxss */
+.header{
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: limegreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+
+}
+ 
+.music{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+
+}
+
+.swippp{
+  height: 470rpx;
+}
+
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+
+
+.text-all{
+  color: green;
+  font-size: 10px;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+} 
+ 
+.content-item{
+  height: 250rpx;
+  width: 45%;
+  background-color: goldenrod;
+  margin: 5px;
+  position: relative;
+}
+
+.content-item image{
+  width: 100%;
+  height: 100%;
+}
+
+.content-item-text{
+  position: absolute;
+  bottom: 0px;
+  color:white;
+  font-size: 32rpx;
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.5),rgba(0,0,0,0));
+  height: 70rpx;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+
+}
+
+.list-item{
+  height: 750rpx;
+  width: 100%
+}
+
+
+.list-item-images{
+  height: 500rpx;
+  width: 100%;
+  position: relative;
+}
+
+
+.list-item-images-img{
+  height: 100%;
+  width: 100%
+}
+
+.list-item-text{
+  height: 100rpx;
+  width: 96%;
+  margin-top: 15rpx;
+  padding-left: 2%;
+  padding-right:2%;
+}
+
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50rpx;
+  right:50rpx;
+}
+
+.list-item-text-title{
+  font-size: 18px;
+  font-weight:400;
+}
+ 
+.list-item-text-content{
+  font-size: 13px;
+  color: #999;
+  margin-top: 15rpx;
+}
+
+.selection{
+  border-bottom: 5px solid #ddd;
+
+}
+
+.post {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    float: right;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;  
+    border: 0 solid #ffffff;
+    box-shadow: 4px 1px 1px #cccccc;
+}
+
+
+.aon{
+position: absolute;
+white-space:nowrap;/* 防止向下换行*/
+animation-timing-function: linear;
+animation-fill-mode: none;
+}
+.doommview{
+  z-index: 100;
+  height: 80%;
+  width: 100%;
+  position: absolute;
+}
+
+@keyframes first{
+  from{left: 100%; }
+  to{left: -100%;}
+}

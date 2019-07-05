@@ -1,0 +1,67 @@
+<!--miniprogram/pages/photo/photo.wxml-->
+
+<view class="doommview">
+    <block wx:for="{{doommData}}" wx:key="id">
+        <text wx:if="{{item.display}}" class="aon" style="animation: first {{item.time}}s linear forwards;top:{{item.top}}%;color:{{item.color}};">
+            {{item.text}}
+        </text>
+    </block>
+</view>
+
+<view class="container">
+
+<view class="selection">
+  <swiper autoplay="{{true}}" interval="3000" duration="1000" class='swippp'>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item >
+        <image src="{{item}}" class="slide-image"  mode="aspectFill" />
+      </swiper-item>
+    </block> 
+  </swiper>
+</view>
+  
+<view class="selection">
+  <view class="header">
+    <text>Year</text>
+    <text class="text-all">💗💗💗</text>
+  </view>
+  <view class="content">
+      <view class="content-item" wx:for="{{contentItems}}" wx:for-index="key" wx:for-item="value" >
+        <image src="{{value.address}}" mode="aspectFill"></image>
+        <view class="content-item-text">
+          <text>{{key}}</text>
+        </view>
+      </view>
+  </view>
+</view>
+
+
+<view class="selection">
+  <view class="header">
+    <text>Time</text>
+    <text class="text-all">💗💗💗</text>
+  </view>
+  <view class="list-item" wx:for="{{listItems}}" wx:for-index="key" wx:for-item="value">
+    <view class="list-item-images">
+      <image src="{{value.address}}" mode="aspectFill" class="list-item-images-img"></image>
+      <image src="cloud://study-cloud-1cd056.7374-study-cloud-1cd056/images/3.jpg" mode="aspectFill" class="avatar"></image>
+    </view>
+    
+    <view class="list-item-text">
+        <view class="list-item-text-title">
+            <text>{{key}}</text>
+        </view>
+
+        <view class="list-item-text-content">
+            <text>{{value.content}}</text>
+        </view>
+    </view>
+
+  </view>
+
+</view>
+
+
+</view>
+
+<image  src="{{mmurl}}" class="post" bindtap='bindbt' ></image>

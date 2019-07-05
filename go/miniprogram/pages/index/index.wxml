@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view>
+  <view>
+    <view>
+      <view class="container">
+        <text>{{weather.city.data}} {{weather.weather.data}} {{weather.winddirection.data}} {{weather.windpower.data}}</text>
+        <text>{{weather.temperature.data}} ℃ {{weather.humidity.text}} : {{weather.humidity.data}}</text>
+
+        <image src="../../images/aixin.png" mode="aspectFill" class="avatar"></image>
+        
+      </view>
+    </view>
+
+<text class="gray-fl">{{nowTime}}</text>
+
+      <view class="selection">
+          <view class="header">
+            <text>Every Day</text>
+            <text>⭐⭐⭐</text>
+          </view>
+          <view class="list-item" wx:for="{{searched}}">
+            <view class="divLine"></view>
+              <view class="list-item-images">
+                <image src="{{item.url}}" mode="aspectFill" class="list-item-images-img"></image>
+              </view>
+                <view class="list-item-text">
+                    <view class="list-item-text-title">
+                      <text>{{item.address}} {{item.weather}} {{item.time}}</text>
+                    </view>
+                    <view class="list-item-text-content">
+                        <text>{{item.desc}}</text>
+                    </view>
+            </view>
+          </view>
+      </view>
+
+  </view>
+</view>
+
+<image wx:if="{{openid === 'oajps5d60kx1sH5pnZljwhNmv3Hs' || openid === 'oajps5ZfPpBvsNHbQLuX9cyQ_a6M'}}" src="../../images/jiahao.png" class="post" bindtap='gotonew'></image>

@@ -1,0 +1,14 @@
+<!--miniprogram/pages/newpage/newpage.wxml-->
+<image src='{{imgUrl}}' class='imageaa' bindtap='upload'></image>
+
+
+<view class="selection">
+          <view class="header">
+            <text>{{weather.city.data}}</text>
+            <text>{{weather.weather.data}}</text>
+          </view>
+</view>
+
+<textarea placeholder="Say Something~" bindblur="bindTextAreaBlur" auto-focus />
+
+<image wx:if="{{openid === 'oajps5d60kx1sH5pnZljwhNmv3Hs' || openid === 'oajps5ZfPpBvsNHbQLuX9cyQ_a6M'}}" src="../../images/dui.png" class="post" bindtap='subbbb' ></image> 
